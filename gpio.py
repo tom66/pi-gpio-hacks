@@ -1,4 +1,6 @@
+import time
 import RPi.GPIO as GPIO  
+
 GPIO.setmode(GPIO.BCM)  
 
 GPIO.setup(12, GPIO.OUT)  
@@ -10,4 +12,5 @@ def cb(*args):
 
 GPIO.add_event_detect(13, GPIO.RISING, callback=cb)  
 
-while True: pass
+while True: 
+    time.sleep(0.001)
