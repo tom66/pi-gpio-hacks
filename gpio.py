@@ -10,3 +10,4 @@ def cb(*args):
 
 GPIO.add_event_detect(13, GPIO.RISING, callback=cb)  
 
+while True: pass
