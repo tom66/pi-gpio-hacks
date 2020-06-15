@@ -8,5 +8,5 @@ def cb(*args):
     GPIO.output(12, 1)
     GPIO.output(12, 0)
 
-GPIO.add_event_detect(13, GPIO.RISING, callback=cb, bouncetime=0)  
+GPIO.add_event_detect(13, GPIO.RISING, callback=cb)  
 
